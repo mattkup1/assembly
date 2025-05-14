@@ -22,7 +22,7 @@ start:
 	
 	mv s0,a0					# Store the number and result in s0
 	
-	loop:						# While operator is not '@', Continue taking user input
+	main_loop:					# While operator is not '@', Continue taking user input
 		la a0,input_signal		# Print "<<" to get operator from the user
 		li a7,4
 		ecall
@@ -60,7 +60,7 @@ start:
 
 		bottom_loop:			# Once operation is complete
 			mv s0,a0			# Store returned result a0 back in s0
-			j loop				# Jump to top of loop and get next user input
+			j main_loop			# Jump to top of loop and get next user input
 
 add_:
 	jal ra,myAdd				# Perform a0 = a0 + a1
@@ -109,7 +109,7 @@ myMul:							# Compute a0 = a0 * a1 (a0 is result, a1 is right operand)
 	sw t0,4(sp)
 	sw t1,0(sp)
 
-	slt t0,a1,zero				# Case a1 (right operand) is negative
+	slt t0,a1,zero				# Case a1 (right operand) is negative - Multiply 2's compliment of both operands
 	li t1,1						
 	beq t0,t1,mull_neg
 
