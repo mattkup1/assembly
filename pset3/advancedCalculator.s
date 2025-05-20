@@ -7,7 +7,7 @@
 .data 
 input_signal: .asciz ">>"
 result_msg: .asciz "Result: " 
-overflow_msg: .asciz "Overflow error!\n"
+op_error_msg: .asciz "Not an operator\n"
 newline: .asciz "\n"
 .text
 
@@ -57,6 +57,11 @@ start:
 
 		li t0,'^'				# Case '^' operator
 		beq s1,t0,pow			# Raise a0 = a0 ^ a1
+
+		la a0,op_error_msg		# Case not valid operator - Print error message
+		li a7,4
+		ecall
+		j main_loop
 
 		bottom_loop:			# Once operation is complete
 			mv s0,a0			# Store returned result a0 back in s0
