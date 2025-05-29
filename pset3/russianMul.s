@@ -1,9 +1,3 @@
-# Name: Matt Kuperwasser, 322667270
-# Name: Moshe Hanau, 215538257
-# Course: Computer Architecture Lab
-# Homework 3 - Advanced Calculator
-
-
 .data 
 input_signal: .asciz ">>"
 result_msg: .asciz "Result: " 
