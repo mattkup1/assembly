@@ -1,5 +1,3 @@
-.data
-
 .text
 
 li s0,0                                 # Initialize LED register with 0
@@ -12,7 +10,7 @@ main:
 
     
     li t0,'s'                           # If command is s / c / t - Read bit position
-    beq a1,t0,read_led_pos
+    beq a1,t0,read_led_pos              
     li t0,'c'
     beq a1,t0,read_led_pos
     li t0,'t'
@@ -32,7 +30,7 @@ bottom_main:
     jal print_led
     j main
 
-led_control:
+led_control:                            # led_control function body
     addi sp,sp,-24                      # Memory management
     sw a0,20(sp)
     sw a1,16(sp)
