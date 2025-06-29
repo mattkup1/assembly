@@ -92,16 +92,16 @@ loop:
     j loop
 
 nexti:
-    addi t0, t0, 1                  # i += 1
-    bgt t0, t6, print_array         # if i == Num Holes, break
+    addi t0, t0, 1              # i += 1
+    bgt t0, t6, print_array     # if i == Num Holes, break
     j reconstruct
 
-    add sp, sp, s5                  # Adjust sp 
+    add sp, sp, s5              # Adjust sp 
 
 # Print sorted array
 print_array:
     li a7, 4
-    la a0, output_msg			    # Print "sorted array"
+    la a0, output_msg			# Print "sorted array"
     ecall
     la s1, array
     addi s2, s1, 8
