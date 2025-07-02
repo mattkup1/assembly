@@ -1,3 +1,11 @@
+# -------------------------------------
+# Name: Matt Kuperwasser 322667270
+# Name: Moshe Hanau 215538257
+# Course: Lab in Computer Architecture
+# Lab 9: Pigeon Hole Sort Algorithm
+# Simulator Version
+# -------------------------------------
+
 .data
 prompt:     .ascii "Enter 8 integers\n"
 input_msg:  .asciz "Enter integer: "
