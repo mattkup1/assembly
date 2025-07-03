@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/Users/mattkuperwasser/Desktop/assembly/pset9/esp32_version/build/CMakeFiles/bootloader
+/Users/mattkuperwasser/Desktop/assembly/pset9/esp32_version/build/CMakeFiles/bootloader.rule
+/Users/mattkuperwasser/Desktop/assembly/pset9/esp32_version/build/CMakeFiles/bootloader-complete.rule
+/Users/mattkuperwasser/Desktop/assembly/pset9/esp32_version/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/Users/mattkuperwasser/Desktop/assembly/pset9/esp32_version/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/Users/mattkuperwasser/Desktop/assembly/pset9/esp32_version/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/Users/mattkuperwasser/Desktop/assembly/pset9/esp32_version/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/Users/mattkuperwasser/Desktop/assembly/pset9/esp32_version/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/Users/mattkuperwasser/Desktop/assembly/pset9/esp32_version/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/Users/mattkuperwasser/Desktop/assembly/pset9/esp32_version/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

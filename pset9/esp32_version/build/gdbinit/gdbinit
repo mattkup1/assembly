@@ -1,0 +1,2 @@
+source /Users/mattkuperwasser/Desktop/assembly/pset9/esp32_version/build/gdbinit/symbols
+source /Users/mattkuperwasser/Desktop/assembly/pset9/esp32_version/build/gdbinit/connect

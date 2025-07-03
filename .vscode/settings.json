@@ -1,5 +1,9 @@
 {
     "idf.openOcdConfigs": [
         "board/esp32c6-builtin.cfg"
-    ]
+    ],
+    "idf.port": "/dev/tty.usbmodem5A330045431",
+    "idf.espIdfPath": "/Users/mattkuperwasser/esp/esp-idf",
+    "idf.toolsPath": "/Users/mattkuperwasser/.espressif",
+    "idf.pythonInstallPath": "/opt/homebrew/bin/python3"
 }
